@@ -23,13 +23,17 @@
                 swine venison jerky fatback. Shoulder swine shankle fatback pork. Chicken pastrami landjaeger hamburger
                 shoulder. Bacon spare ribs filet mignon shank bresaola beef ribs pancetta sausage pork belly drumstick
                 frankfurter.
-            <p><strong>$123.46</strong></p>
             <form action="#">
-                <div class="input-group">
+            <p><strong id="unit-price" data-unit-price="123.46">Unit Price: $123.46</strong></p>
+            <div class="input-group">
                     <label class="input-group-addon" for="quantity">Quantity</label>
                     <select class="form-select" id="quantity">
                     </select>
                     <button class="btn btn-primary input-group-btn">Buy</button>
+                </div>
+                <div class="input-group">
+                    <label class="input-group-addon" for="total">Total</label>
+                    <input type="number" min="0" step="0.01" class="form-input" id="total" disabled/>
                 </div>
             </form>
         </div>
