@@ -19,9 +19,3 @@ $quantity.onchange = function() {
 };
 
 $quantity.onchange(null);
-
-////
-// Para todos los elementos, cuando haya un cambio de valor...
-// Si la propiedad "onchange" es una funcion, ejecutarla.
-// element.onchange( 1 );
-//
