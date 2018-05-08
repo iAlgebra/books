@@ -7,9 +7,11 @@ var $shipping = document.getElementById('shipping');
 var intShippingPrice = Number($shipping.dataset.intShipping);
 var baseShippingPrice = Number($shipping.dataset.baseShipping);
 var $total = document.getElementById('total');
+var decimalPlaces = 2;
 
 var maxQuantity = Number($quantity.dataset.maxQuantity);
 
+//Creating the 'Options' within the 'Select'
 for (var i = 0; i < maxQuantity; i++) {
   var $option = document.createElement('option');
 
@@ -19,20 +21,33 @@ for (var i = 0; i < maxQuantity; i++) {
   $quantity.appendChild($option);
 }
 
+//For when 'Select' changes (choosing the quantity of books)
 $quantity.onchange = function() {
-  $subtotal.value = unitPrice * $quantity.value;
-  $total.value = Number($subtotal.value) + Number($shipping.value);
+  $subtotal.value = (unitPrice * Number($quantity.value)).toFixed(
+      decimalPlaces,
+  );
+
+  updateTotalValue();
 };
 
+//Forcing a change in the 'Select' so Subtotal and Total are populated
 $quantity.onchange(null);
 
+//Toggling International Shipping
 $shippingCheckbox.onclick = function() {
   if ($shippingCheckbox.checked) {
     $shipping.value = intShippingPrice;
   } else {
     $shipping.value = baseShippingPrice;
   }
-  $total.value = Number($subtotal.value) + Number($shipping.value);
+  updateTotalValue();
 };
 
-$total.value = Number($subtotal.value) + Number($shipping.value);
+//Forcing a click on the checkbox so 'Shipping' is populated with '0' on load
+$shippingCheckbox.onclick(null);
+
+function updateTotalValue() {
+  $total.value = (Number($subtotal.value) + Number($shipping.value)).toFixed(
+      decimalPlaces,
+  );
+}
