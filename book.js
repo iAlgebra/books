@@ -7,7 +7,7 @@ var $shipping = document.getElementById('shipping');
 var intShippingPrice = Number($shipping.dataset.intShipping);
 var $total = document.getElementById('total');
 
-var maxQuantity = 100;
+var maxQuantity = Number($quantity.dataset.maxQuantity);
 
 for (var i = 0; i < maxQuantity; i++) {
   var $option = document.createElement('option');
