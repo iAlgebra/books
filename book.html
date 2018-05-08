@@ -22,15 +22,34 @@
                 drumstick andouille ham hock. Tail pork loin porchetta shoulder pig turducken hamburger, jowl meatloaf
                 swine venison jerky fatback. Shoulder swine shankle fatback pork. Chicken pastrami landjaeger hamburger
                 shoulder. Bacon spare ribs filet mignon shank bresaola beef ribs pancetta sausage pork belly drumstick
-                frankfurter.
+                frankfurter.</p>
             <form action="#">
-            <p><strong id="unit-price" data-unit-price="123.46">Unit Price: $123.46</strong></p>
-            <div class="input-group">
+                <p><strong id="unit-price" data-unit-price="123.46">Unit Price: $123.46</strong></p>
+                <div class="input-group">
                     <label class="input-group-addon" for="quantity">Quantity</label>
                     <select class="form-select" id="quantity">
                     </select>
                     <button class="btn btn-primary input-group-btn">Buy</button>
                 </div>
+
+                <div class="form-group">
+                    <label class="form-switch">
+                        <input type="checkbox" id="shipping-checkbox">
+                        <i class="form-icon"></i> International Shipping
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-addon" for="subtotal">Subtotal</label>
+                    <input type="number" min="0" step="0.01" class="form-input" id="subtotal" value="0" disabled/>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-group-addon" for="shipping">Shipping</label>
+                    <input type="number" min="0" step="0.01" class="form-input" id="shipping" disabled value="0"
+                           data-int-shipping="10"/>
+                </div>
+
                 <div class="input-group">
                     <label class="input-group-addon" for="total">Total</label>
                     <input type="number" min="0" step="0.01" class="form-input" id="total" disabled/>
