@@ -5,6 +5,7 @@ var unitPrice = Number($unitPrice.dataset.unitPrice);
 var $shippingCheckbox = document.getElementById('shipping-checkbox');
 var $shipping = document.getElementById('shipping');
 var intShippingPrice = Number($shipping.dataset.intShipping);
+var baseShippingPrice = Number($shipping.dataset.baseShipping);
 var $total = document.getElementById('total');
 
 var maxQuantity = Number($quantity.dataset.maxQuantity);
@@ -29,7 +30,7 @@ $shippingCheckbox.onclick = function() {
   if ($shippingCheckbox.checked) {
     $shipping.value = intShippingPrice;
   } else {
-    $shipping.value = 0;
+    $shipping.value = baseShippingPrice;
   }
   $total.value = Number($subtotal.value) + Number($shipping.value);
 };
