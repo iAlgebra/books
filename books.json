@@ -1,0 +1,77 @@
+[
+  {
+    "image": "http://localhost:63342/books/img/pinocchio.jpg",
+    "title": "Pinocchio",
+    "unit-price": 123.46,
+    "description": "Vivamus ut ligula et dolor faucibus cursus. Suspendisse sodales dui elementum ipsum efficitur, quis hendrerit ante facilisis. Maecenas eu dolor id tellus rutrum sollicitudin. Sed.",
+    "genres": [
+      "Fantasy",
+      "Children",
+      "Music",
+      "Novel",
+      "Thriller",
+      "History"
+    ],
+    "authors": [
+      {
+        "name": "Ricky",
+        "surname": "Martin"
+      }
+    ],
+    "quantity": 100
+  },
+  {
+    "image": "http://localhost:63342/books/img/little-red-riding-hood.jpg",
+    "title": "Little Red Riding Hood",
+    "unit-price": 123.46,
+    "description": "Vivamus vitae lectus ligula. Integer porttitor consectetur justo in imperdiet. Sed auctor purus vitae nisi egestas dignissim. Duis eget leo vitae orci porttitor imperdiet at.",
+    "genres": [
+      "Fantasy",
+      "Children",
+      "Music",
+      "Novel",
+      "Thriller",
+      "History"
+    ],
+    "authors": [
+      {
+        "name": "El Puma",
+        "surname": "Rodriguez"
+      },
+      {
+        "name": "Sandro",
+        "surname": "De America"
+      },
+      {
+        "name": "Luis",
+        "surname": "Miguel"
+      }
+    ],
+    "quantity": 100
+  },
+  {
+    "image": "http://localhost:63342/books/img/hansel-and-gretel.jpg",
+    "title": "Hansel y Gretel",
+    "unit-price": 123.46,
+    "description": "Proin auctor fermentum rutrum. Suspendisse molestie ac mauris in consequat. Fusce blandit scelerisque elit, vitae venenatis arcu pretium et. Phasellus aliquet, elit fermentum tempus ultricies.",
+    "genres": [
+      "Fantasy",
+      "Children",
+      "Music",
+      "Novel",
+      "Thriller",
+      "History"
+    ],
+    "authors": [
+      {
+        "name": "Lady",
+        "surname": "Gaga"
+      },
+      {
+        "name": "Daddy",
+        "surname": "Yankee"
+      }
+    ],
+    "quantity": 100
+  }
+]
