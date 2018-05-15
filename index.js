@@ -136,8 +136,3 @@ function createBookHtml(book) {
   // add the div to its father.
   $cardFooter.appendChild($button);
 }
-
-/*
-function createCardImage(imageUrl, title) {
-
-}*/
