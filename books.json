@@ -1,6 +1,6 @@
 [
   {
-    "image": "http://localhost:63342/books/img/pinocchio.jpg",
+    "image": "img/pinocchio.jpg",
     "title": "Pinocchio",
     "unit-price": 123.46,
     "description": "Vivamus ut ligula et dolor faucibus cursus. Suspendisse sodales dui elementum ipsum efficitur, quis hendrerit ante facilisis. Maecenas eu dolor id tellus rutrum sollicitudin. Sed.",
@@ -21,7 +21,7 @@
     "quantity": 100
   },
   {
-    "image": "http://localhost:63342/books/img/little-red-riding-hood.jpg",
+    "image": "img/little-red-riding-hood.jpg",
     "title": "Little Red Riding Hood",
     "unit-price": 123.46,
     "description": "Vivamus vitae lectus ligula. Integer porttitor consectetur justo in imperdiet. Sed auctor purus vitae nisi egestas dignissim. Duis eget leo vitae orci porttitor imperdiet at.",
@@ -50,7 +50,7 @@
     "quantity": 100
   },
   {
-    "image": "http://localhost:63342/books/img/hansel-and-gretel.jpg",
+    "image": "img/hansel-and-gretel.jpg",
     "title": "Hansel y Gretel",
     "unit-price": 123.46,
     "description": "Proin auctor fermentum rutrum. Suspendisse molestie ac mauris in consequat. Fusce blandit scelerisque elit, vitae venenatis arcu pretium et. Phasellus aliquet, elit fermentum tempus ultricies.",
